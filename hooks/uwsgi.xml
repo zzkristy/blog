@@ -1,0 +1,15 @@
+<uwsgi>
+    <socket>0.0.0.0:8180</socket>
+    <module>github_hook:app</module>
+    <workers>2</workers>
+    <cheap/>
+    <cheaper>1</cheaper>
+    <harakiri>30</harakiri>
+    <harakiri-verbose/>
+    <daemonize>logs/uwsgi.log</daemonize>
+    <master/>
+    <lazy/>
+    <py-tracebacker>/tmp/uwsgi_website_tbsocket.</py-tracebacker>
+    <buffer-size>65536</buffer-size>
+    <post-buffering>65536</post-buffering>
+</uwsgi>
